@@ -23,7 +23,7 @@ export default function ProfileScreen({ profile, darkMode, onToggleDark, onReset
 
   return (
     <div className="absolute inset-0 overflow-y-auto animate-fade-up" style={{ paddingBottom: 'calc(90px + env(safe-area-inset-bottom))' }}>
-      <div className="px-6 pt-7">
+      <div className="px-6" style={{ paddingTop: 'calc(1.75rem + env(safe-area-inset-top))' }}>
         <div className="mb-[22px] text-[26px] font-extrabold tracking-[-0.8px] text-text">Profil</div>
 
         {/* Settings */}

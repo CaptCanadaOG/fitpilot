@@ -46,7 +46,7 @@ export default function OnboardingScreen({
       : 'border-card-border bg-card text-text';
 
   return (
-    <div className="absolute inset-0 flex flex-col animate-fade-in">
+    <div className="absolute inset-0 flex flex-col animate-fade-in" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       {/* Progress bar */}
       <div className="h-[2px] flex-shrink-0 bg-track">
         <div
