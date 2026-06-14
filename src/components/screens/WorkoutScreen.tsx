@@ -55,7 +55,7 @@ export default function WorkoutScreen({
     return (
       <div className="absolute inset-0 flex flex-col animate-fade-in">
         {/* Top bar */}
-        <div className="flex-shrink-0 px-[22px]" style={{ paddingTop: 'calc(18px + env(safe-area-inset-top))' }}>
+        <div className="flex-shrink-0 px-[22px]" style={{ paddingTop: 'max(18px, env(safe-area-inset-top))' }}>
           <div className="mb-3.5 flex items-center gap-3">
             <div className="h-1 flex-1 overflow-hidden rounded-full bg-track">
               <div
@@ -115,7 +115,7 @@ export default function WorkoutScreen({
   return (
     <div className="absolute inset-0 flex flex-col animate-fade-in">
       {/* Top bar */}
-      <div className="flex-shrink-0 px-[22px] pt-[18px]">
+      <div className="flex-shrink-0 px-[22px]" style={{ paddingTop: 'max(18px, env(safe-area-inset-top))' }}>
         <div className="mb-3.5 flex items-center gap-3">
           <div className="h-1 flex-1 overflow-hidden rounded-full bg-track">
             <div
