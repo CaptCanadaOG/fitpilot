@@ -15,10 +15,13 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-40 border-t border-card-border bg-nav-bg backdrop-blur-2xl"
-      style={{ height: 'calc(72px + env(safe-area-inset-bottom))', paddingBottom: 'env(safe-area-inset-bottom)' }}
+      className="absolute bottom-0 left-0 right-0 z-40 border-t border-card-border bg-nav-bg backdrop-blur-2xl"
+      style={{ height: 'calc(88px + env(safe-area-inset-bottom))' }}
     >
-      <div className="flex h-[72px] items-center px-2">
+      <div
+        className="grid grid-cols-4 items-center px-2"
+        style={{ height: '88px', paddingTop: '8px', paddingBottom: 'max(8px, calc(env(safe-area-inset-bottom) * 0.35))' }}
+      >
         {items.map((item) => {
           const active = activeTab === item.id;
           const color = active ? 'text-nav-active' : 'text-nav-inactive';
@@ -26,7 +29,7 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
             <button
               key={item.id}
               onClick={() => onChange(item.id)}
-              className={`flex flex-1 flex-col items-center gap-1 py-2 ${color}`}
+              className={`flex flex-col items-center gap-1 ${color}`}
             >
               {item.id === 'heute' && (
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
