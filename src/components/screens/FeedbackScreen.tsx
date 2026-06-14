@@ -24,7 +24,7 @@ export default function FeedbackScreen({
 }: FeedbackScreenProps) {
   return (
     <div className="absolute inset-0 overflow-y-auto animate-fade-up">
-      <div className="px-6 py-10 pb-10">
+      <div className="px-6 pt-10" style={{ paddingBottom: 'calc(2.5rem + env(safe-area-inset-bottom))' }}>
         <div className="mb-9 text-center animate-success-pop">
           <div className="mb-2 text-[64px] font-extrabold leading-none tracking-[-2px] text-accent">Fertig.</div>
           <div className="text-base text-text-muted">{workoutDuration} Minuten gut investiert.</div>

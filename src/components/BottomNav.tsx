@@ -14,7 +14,10 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
   ];
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 flex h-[76px] items-center border-t border-card-border bg-nav-bg px-2 pb-2 backdrop-blur-2xl">
+    <div
+      className="absolute bottom-0 left-0 right-0 flex h-[76px] items-center border-t border-card-border bg-nav-bg px-2 pb-2 backdrop-blur-2xl"
+      style={{ height: 'calc(76px + env(safe-area-inset-bottom))', paddingBottom: 'calc(0.5rem + env(safe-area-inset-bottom))' }}
+    >
       {items.map((item) => {
         const active = activeTab === item.id;
         const color = active ? 'text-nav-active' : 'text-nav-inactive';

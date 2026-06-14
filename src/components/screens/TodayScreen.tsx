@@ -64,7 +64,7 @@ export default function TodayScreen({
   ];
 
   return (
-    <div className="absolute inset-0 overflow-y-auto pb-[90px] animate-fade-up">
+    <div className="absolute inset-0 overflow-y-auto animate-fade-up" style={{ paddingBottom: 'calc(90px + env(safe-area-inset-bottom))' }}>
       <div className="px-6 pt-7">
         {/* Header */}
         <div className="mb-[18px] flex items-start justify-between">

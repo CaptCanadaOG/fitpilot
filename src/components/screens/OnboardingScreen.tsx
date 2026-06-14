@@ -286,7 +286,7 @@ export default function OnboardingScreen({
       </div>
 
       {/* Bottom CTA */}
-      <div className="flex-shrink-0 px-6 pb-10 pt-2.5">
+      <div className="flex-shrink-0 px-6 pt-2.5" style={{ paddingBottom: 'calc(2.5rem + env(safe-area-inset-bottom))' }}>
         {isLastStep ? (
           <button
             onClick={onFinish}

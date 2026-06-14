@@ -103,7 +103,7 @@ export default function WorkoutScreen({
         </div>
 
         {/* Action button */}
-        <div className="flex flex-shrink-0 flex-col gap-2.5 px-[22px] pb-11 pt-2.5">
+        <div className="flex flex-shrink-0 flex-col gap-2.5 px-[22px] pt-2.5" style={{ paddingBottom: 'calc(2.75rem + env(safe-area-inset-bottom))' }}>
           <button onClick={onSkipRest} className="w-full rounded-[18px] bg-accent py-[19px] text-[17px] font-bold text-white">
             Weiter
           </button>
@@ -191,7 +191,7 @@ export default function WorkoutScreen({
       </div>
 
       {/* Action buttons */}
-      <div className="flex flex-shrink-0 flex-col gap-2.5 px-[22px] pb-11 pt-2.5">
+      <div className="flex flex-shrink-0 flex-col gap-2.5 px-[22px] pt-2.5" style={{ paddingBottom: 'calc(2.75rem + env(safe-area-inset-bottom))' }}>
         <button onClick={onDone} className="w-full rounded-[18px] bg-accent py-[19px] text-[17px] font-bold text-white">
           Erledigt
         </button>
