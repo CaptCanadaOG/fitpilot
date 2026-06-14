@@ -19,8 +19,8 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
       style={{ height: 'calc(88px + env(safe-area-inset-bottom))' }}
     >
       <div
-        className="grid grid-cols-4 items-center px-2"
-        style={{ height: '88px', paddingTop: '8px', paddingBottom: 'max(8px, calc(env(safe-area-inset-bottom) * 0.35))' }}
+        className="grid grid-cols-4 px-2"
+        style={{ paddingTop: '36px', paddingBottom: 'max(6px, calc(env(safe-area-inset-bottom) * 0.25))' }}
       >
         {items.map((item) => {
           const active = activeTab === item.id;
