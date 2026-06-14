@@ -379,6 +379,12 @@ export default function App() {
         )}
 
         {showBottomNav && <BottomNav activeTab={activeTab} onChange={setActiveTab} />}
+
+        {/* Blend with the Dynamic Island / notch cutout, which iOS always renders pure black */}
+        <div
+          className="pointer-events-none absolute left-0 right-0 top-0 z-50 bg-black"
+          style={{ height: 'env(safe-area-inset-top)' }}
+        />
       </div>
     </div>
   );
