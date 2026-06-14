@@ -1,4 +1,4 @@
-const CACHE = 'fitpilot-v5';
+const CACHE = 'fitpilot-v6';
 const CORE = ['/fitpilot/', '/fitpilot/index.html', '/fitpilot/manifest.json', '/fitpilot/icon-192.png'];
 
 self.addEventListener('install', (e) => {

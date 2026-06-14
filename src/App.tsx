@@ -385,6 +385,14 @@ export default function App() {
           className="pointer-events-none absolute left-0 right-0 top-0 z-50 bg-black"
           style={{ height: 'env(safe-area-inset-top)' }}
         />
+
+        {/* Flat fill for the home-indicator area, flush to the screen edge, no blur artifacts */}
+        {showBottomNav && (
+          <div
+            className="pointer-events-none absolute bottom-0 left-0 right-0 z-50"
+            style={{ height: 'env(safe-area-inset-bottom)', background: 'var(--color-nav-bg)' }}
+          />
+        )}
       </div>
     </div>
   );
