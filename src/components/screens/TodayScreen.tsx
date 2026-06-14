@@ -64,8 +64,14 @@ export default function TodayScreen({
   ];
 
   return (
-    <div className="absolute inset-0 overflow-y-auto animate-fade-up" style={{ paddingBottom: 'calc(96px + env(safe-area-inset-bottom))' }}>
-      <div className="px-6" style={{ paddingTop: 'calc(1.75rem + env(safe-area-inset-top))' }}>
+    <div
+      className="absolute inset-0 flex flex-col overflow-y-auto px-6 animate-fade-up"
+      style={{
+        paddingTop: 'calc(1.75rem + env(safe-area-inset-top))',
+        paddingBottom: 'calc(108px + env(safe-area-inset-bottom))',
+      }}
+    >
+      <div className="flex flex-1 flex-col">
         {/* Header */}
         <div className="mb-[18px] flex items-start justify-between">
           <div>
@@ -178,7 +184,7 @@ export default function TodayScreen({
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col gap-2.5">
+        <div className="mt-auto flex flex-col gap-2.5 pt-6">
           <button
             onClick={() => onStartWorkout(false)}
             className="w-full rounded-[18px] bg-accent py-[19px] text-[17px] font-bold tracking-[0.2px] text-white"
