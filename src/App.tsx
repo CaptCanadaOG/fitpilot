@@ -306,8 +306,8 @@ export default function App() {
   const showBottomNav = !inOnboarding && !inWorkout && !inFeedback;
 
   return (
-    <div className="fixed inset-0 bg-bg text-text font-sans">
-      <div className="relative mx-auto h-full max-w-[430px] overflow-hidden bg-bg">
+    <div className="fixed inset-x-0 top-0 bg-bg text-text font-sans" style={{ height: '100dvh', minHeight: '100svh' }}>
+      <div className="relative mx-auto max-w-[430px] overflow-hidden bg-bg" style={{ height: '100dvh', minHeight: '100svh' }}>
         {inOnboarding && (
           <OnboardingScreen
             step={onboardingStep}
