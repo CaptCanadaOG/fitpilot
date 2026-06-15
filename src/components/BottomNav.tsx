@@ -15,8 +15,8 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
 
   return (
     <div
-      className="absolute bottom-0 left-0 right-0 z-40 border-t border-card-border bg-nav-bg backdrop-blur-2xl"
-      style={{ height: '64px' }}
+      className="fixed bottom-0 left-1/2 right-auto z-40 w-full max-w-[430px] -translate-x-1/2 border-t border-card-border bg-nav-bg backdrop-blur-2xl"
+      style={{ height: '72px' }}
     >
       <div className="grid h-full grid-cols-4 items-center px-2">
         {items.map((item) => {
