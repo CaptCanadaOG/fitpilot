@@ -68,7 +68,7 @@ export default function TodayScreen({
       className="absolute inset-0 flex flex-col overflow-y-auto px-6 animate-fade-up"
       style={{
         paddingTop: 'calc(1.75rem + env(safe-area-inset-top))',
-        paddingBottom: 'calc(108px + env(safe-area-inset-bottom))',
+        paddingBottom: '84px',
       }}
     >
       <div className="flex flex-1 flex-col">

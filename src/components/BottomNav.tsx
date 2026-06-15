@@ -16,12 +16,9 @@ export default function BottomNav({ activeTab, onChange }: BottomNavProps) {
   return (
     <div
       className="absolute bottom-0 left-0 right-0 z-40 border-t border-card-border bg-nav-bg backdrop-blur-2xl"
-      style={{ height: 'calc(88px + env(safe-area-inset-bottom))' }}
+      style={{ height: '64px' }}
     >
-      <div
-        className="grid grid-cols-4 px-2"
-        style={{ paddingTop: '36px', paddingBottom: 'max(6px, calc(env(safe-area-inset-bottom) * 0.25))' }}
-      >
+      <div className="grid h-full grid-cols-4 items-center px-2">
         {items.map((item) => {
           const active = activeTab === item.id;
           const color = active ? 'text-nav-active' : 'text-nav-inactive';
