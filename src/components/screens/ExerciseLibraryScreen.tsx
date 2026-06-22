@@ -10,7 +10,7 @@ export default function ExerciseLibraryScreen() {
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
-    <div className="absolute inset-0 overflow-y-auto animate-fade-up" style={{ paddingBottom: '80px' }}>
+    <div className="absolute inset-0 overflow-y-auto animate-fade-up" style={{ paddingBottom: '88px' }}>
       <div className="px-6" style={{ paddingTop: 'calc(1.75rem + env(safe-area-inset-top))' }}>
         <div className="mb-1.5 text-[26px] font-extrabold tracking-[-0.8px] text-text">Übungen</div>
         <div className="mb-[22px] text-sm leading-[1.55] text-text-muted">
